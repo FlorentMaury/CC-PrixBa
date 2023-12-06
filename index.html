@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>PrixBa</title>
-</head>
-<body>
-    
-    <script src="https://kit.fontawesome.com/df2db8789f.js" crossorigin="anonymous"></script>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-logo">
+          <img src="/images/logo_color.png" alt="Prixba Logo" />
+          <span>Prixba</span>
+        </div>
+      </div>
+      <div class="header-steps">
+        <div class="header-slogan">
+          Tous vos besoins à petits prix dans la métropole Lilloise
+        </div>
+        <ul>
+          <li>
+            <span class="step-number">1</span> Choix et commandes des articles
+          </li>
+          <li><span class="step-number">2</span> Retrait des articles</li>
+          <li><span class="step-number">3</span> Paiement des articles</li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="nav-bar">
+      <select class="category-select">
+        <option value="all">Catégories</option>
+        <!-- Add other categories here -->
+      </select>
+      <div class="search-box">
+        <input type="text" placeholder="Recherche" />
+        <button>Rechercher</button>
+      </div>
+      <div class="nav-links">
+        <a href="#">Catalogue</a>
+        <a href="#">Questions fréquentes</a>
+        <a href="#">Connexion</a>
+        <div class="nav-icons">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">2</span>
+        </div>
+      </div>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/df2db8789f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
