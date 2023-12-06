@@ -1,3 +1,5 @@
+    // Règles générales.
+
 .main {
     font-family    : 'Montserrat', sans-serif;
     margin         : auto 20%;
@@ -13,6 +15,9 @@
         align-self: start;
     }
 }
+
+
+    // Premier Paragraphe.
 
 .cards {
 
@@ -32,13 +37,29 @@
 
     &__text {
 
-        display: flex;
+        display        : flex;
         justify-content: space-between;
-        align-items: end;
-        color: green;
+        align-items    : end;
+        color          : green;
 
         div {
             color: #2D4059;
         }
+    }
+}
+
+
+    // Second Paragraphe.
+
+.icons {
+    display              : grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    &__box {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        background    : #2D4059;
+        color         : white;
     }
 }
