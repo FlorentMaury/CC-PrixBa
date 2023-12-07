@@ -1,0 +1,195 @@
+    // Règles générales.
+
+.main {
+    font-family    : 'Montserrat', sans-serif;
+    width          : 100%;
+    max-width      : 1200px;
+    margin         : 0 auto;
+    padding        : 20px;
+    color          : #2D4059;
+
+    &__title {
+        font-size  : 2rem;
+        color      : #EA5455;
+        align-self : start;
+        margin     : 80px 0;
+        display    : flex;
+        align-items: center;
+
+        p {
+            color      : #2D4059;
+            font-size  : 1rem; 
+            margin-left: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+    // Premier Paragraphe.
+
+.cards {
+
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    font-weight    : 600;
+
+    &__card {
+        box-shadow   : 0 0 10px rgba(0, 0, 0, 0.2);
+        margin       : 1rem;
+        padding      : 10px;
+        border-radius: 8px;
+
+        img {
+            width : 180px;
+            height: 180px;
+        }
+    }
+
+    &__arrowRight {
+        color    : #EA5455;
+        font-size: 2rem;
+    }
+
+    &__arrowLeft {
+        color    : #EA5455;
+        transform: rotate(180deg);
+        font-size: 2rem;
+    }
+}
+
+.smallScreen {
+    display: none;
+}
+
+.card {
+
+    &__text {
+
+        display        : flex;
+        justify-content: space-between;
+        align-items    : end;
+        color          : green;
+
+        div {
+            color: #2D4059;
+        }
+    }
+}
+
+
+    // Second Paragraphe.
+
+.icons {
+    display              : grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items          : center;
+    justify-items        : center;
+
+    &__box {
+        display       : flex;
+        flex-direction: column;
+        font-size     : 1.5rem;
+        align-items   : center;
+        justify-content: space-around;
+        background    : #2D4059;
+        color         : white;
+        width         : 150px;
+        height        : 150px;
+        border-radius : 8px;
+        margin        : 1rem;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+    // Troisième Paragraphe.
+
+.chosen {
+
+    display        : grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__pictures {
+
+        margin        : 10px;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        color         : #EA5455;
+        font-weight   : 800;
+
+        img {
+            width     : 280px;
+            height    : 200px;
+            object-fit: cover;
+        }
+
+        p {
+            margin: 10px;
+        }
+    }
+}
+
+
+        // RESPONSIVE.
+
+
+@media screen and (max-width: 768px) {
+
+    // Règles générales.
+
+    .main {
+        flex-direction: column;
+
+        &__title {
+            flex-direction: column;
+            align-items   : start;
+    
+            p {
+                font-weight: 800;
+            }
+        }
+    }
+
+
+    // Premier Paragraphe.
+
+    .cards {
+        justify-content: center;
+    }
+
+    .smallScreen {
+        display: block;
+    }
+
+    // Second Paragraphe.
+
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+
+        &__box {
+            font-size: 1rem;
+            width    : 120px;
+            height   : 120px;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    // Troisième Paragraphe.
+
+    .chosen {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
