@@ -1,59 +1,131 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* reset.css */
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+aside {
+  margin-left: 80px;
+  width: 200px;
 }
 
-/* Remove list styles on ul, ol elements */
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+section {
+  margin-left: 200px;
 }
 
-/* Remove default padding */
-ul,
-ol {
-  padding: 0;
+.bouton {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #EA5455;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
+.categorie_list {
+  list-style: circle;
+  letter-spacing: 1px;
+  line-height: 1.8;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+.main {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #2D4059;
+  margin-left: 200px;
 }
 
-/* A better looking default horizontal rule */
-hr {
-  size: 1px;
-  border: none;
-  background-color: #333;
-  height: 1px;
-  margin: 1em 0;
+.main__title {
+  font-size: 2rem;
+  color: #EA5455;
+  align-self: start;
+  margin: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+.main__title p {
+  color: #2D4059;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.main__title h2 {
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.cards__card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cards__card img {
+  width: 180px;
+  height: 180px;
+}
+
+.cards__arrowRight {
+  color: #EA5455;
+  font-size: 2rem;
+}
+
+.cards__arrowLeft {
+  color: #EA5455;
+  transform: rotate(180deg);
+  font-size: 2rem;
+}
+
+.smallScreen {
+  display: none;
+}
+
+.card__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: green;
+}
+
+.card__text div {
+  color: #2D4059;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .main__title {
+    flex-direction: column;
+    align-items: start;
+  }
+  .main__title p {
+    font-weight: 800;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .hidden {
+    display: none;
+  }
+  .chosen {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
