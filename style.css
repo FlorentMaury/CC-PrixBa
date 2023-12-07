@@ -60,6 +60,36 @@ section {
   font-size: 1.5rem;
 }
 
+.first_card {
+  font-weight: 600;
+}
+
+.first_cards__card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  padding: 18px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.first_cards__card img {
+  width: 180px;
+  height: 180px;
+}
+
+.first_card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  color: green;
+}
+
+.first_card__text div {
+  color: #2D4059;
+}
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -78,21 +108,6 @@ section {
 .cards__card img {
   width: 180px;
   height: 180px;
-}
-
-.cards__arrowRight {
-  color: #EA5455;
-  font-size: 2rem;
-}
-
-.cards__arrowLeft {
-  color: #EA5455;
-  transform: rotate(180deg);
-  font-size: 2rem;
-}
-
-.smallScreen {
-  display: none;
 }
 
 .card__text {
@@ -114,17 +129,18 @@ section {
     flex-direction: column;
     align-items: start;
   }
+  .aside {
+    position: relative;
+  }
   .main__title p {
     font-weight: 800;
   }
-  .cards {
+  .first_card {
     justify-content: center;
   }
-  .hidden {
-    display: none;
-  }
-  .chosen {
-    grid-template-columns: repeat(1, 1fr);
+  .cards {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
