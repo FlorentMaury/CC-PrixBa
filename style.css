@@ -406,8 +406,14 @@ body {
   .main__title p {
     font-weight: 800;
   }
-  .cards__arrowLeft {
-    background: red;
+  .cards {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .cards__card img {
+    width: 10px;
+    height: 10px;
   }
   .smallScreen {
     display: block;

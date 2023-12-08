@@ -171,8 +171,15 @@
     // Premier Paragraphe.
 
     .cards {
-        &__arrowLeft {
-            background: red;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+
+        &__card {
+            img {
+                width : 10px;
+                height: 10px;
+            }
         }
     }
 
