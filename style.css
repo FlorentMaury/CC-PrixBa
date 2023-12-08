@@ -47,7 +47,7 @@
   }
   .footer-links__top,
   .footer-links__bottom {
-    align-items: center;
+    align-items: end;
   }
   .footer-bottom {
     padding: 10px;
@@ -86,22 +86,21 @@ body {
 .header-steps {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: center;
-  text-align: center;
   padding: 10px 0;
+  margin: 0 20px;
 }
 .header-steps .header-slogan {
   font-size: 1.1em;
   margin-bottom: 15px;
   font-weight: bold;
-  margin-left: 200px;
+  display: flex;
 }
 .header-steps ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin-right: 20px;
 }
 .header-steps ul li {
   font-size: 0.9em;
@@ -415,6 +414,7 @@ body {
   }
   .icons {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
   .icons__box {
     font-size: 1rem;
@@ -426,6 +426,7 @@ body {
   }
   .chosen {
     grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
   }
 }
 .main__morePictures img {
