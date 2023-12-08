@@ -151,7 +151,6 @@
     // Règles générales.
 
     .main {
-        flex-direction: column;
 
         &__title {
             flex-direction: column;
@@ -167,7 +166,9 @@
     // Premier Paragraphe.
 
     .cards {
-        justify-content: center;
+        &__arrowLeft {
+            background: red;
+        }
     }
 
     .smallScreen {
