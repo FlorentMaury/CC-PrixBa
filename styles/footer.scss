@@ -1,62 +1,57 @@
-.site-footer {
-    font-family: Arial, sans-serif;
-    padding: 20px 0;
-    background-color: #e5e5e5;
-}
+.footercolumn {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #e5e5e5;
+  gap: 600px;
 
-.footer-links {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #2d4059;
-}
+  .footer-links__top,
+  .footer-links__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.footer-links a {
-    color: #2d4059;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
+    a {
+      color: #2d4059;
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .footer-bottom {
-    background-color: #2d4059;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+  text-align: center;
+  background-color: #2d4059; // Fond bleu foncé pour la partie inférieure
+  color: white;
+  padding: 10px 0;
+  width: 100%;
 
-.footer-bottom a {
+  a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-bottom a:hover {
-    text-decoration: underline;
-}
-
-@media screen and (min-width: 768px) {
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        font-weight: 600;
-
-        a {
-            margin: 5px;
-        }
-
-        &__top {
-            display: flex;
-            flex-direction: column;
-            margin: 10px;
-        }
-
-        &__bottom {
-            display: flex;
-            flex-direction: column;
-            margin: 10px;
-        }
+    padding: 5px;
+    &:hover {
+      text-decoration: underline;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footercolumn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links__top,
+  .footer-links__bottom {
+    align-items: center; // Centrer les liens sur mobile
+  }
+
+  .footer-bottom {
+    padding: 10px;
+  }
 }
