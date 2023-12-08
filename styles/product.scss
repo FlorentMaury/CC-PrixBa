@@ -1,8 +1,9 @@
 .main {
     &__morePictures {
         img {
-            width: 100px;
+            width : 100px;
             height: 100px;
+            margin: 10px;
         }
     }
 }
@@ -21,7 +22,7 @@
     &__desc {
         display       : flex;
         flex-direction: column;
-        margin: 10px;
+        margin        : 10px;
 
         p {
             color: #2D4059;
