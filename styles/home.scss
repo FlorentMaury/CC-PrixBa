@@ -98,6 +98,7 @@
     grid-template-columns: repeat(6, 1fr);
     align-items          : center;
     justify-items        : center;
+    width: 100%;
 
     &__box {
         display       : flex;
@@ -107,8 +108,8 @@
         justify-content: space-around;
         background    : #2D4059;
         color         : white;
-        width         : 150px;
-        height        : 150px;
+        width         : 130px;
+        height        : 130px;
         border-radius : 8px;
         margin        : 1rem;
 
