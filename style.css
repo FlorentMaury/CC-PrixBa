@@ -316,6 +316,10 @@ body {
 .card__text div {
   color: #2D4059;
 }
+.card__text div a {
+  text-decoration: none;
+  color: #2D4059;
+}
 
 .icons {
   display: grid;
@@ -362,9 +366,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main {
-    flex-direction: column;
-  }
   .main__title {
     flex-direction: column;
     align-items: start;
@@ -372,8 +373,8 @@ body {
   .main__title p {
     font-weight: 800;
   }
-  .cards {
-    justify-content: center;
+  .cards__arrowLeft {
+    background: red;
   }
   .smallScreen {
     display: block;
@@ -393,6 +394,70 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.main__morePictures img {
+  width: 100px;
+  height: 100px;
+}
+
+.product {
+  display: flex;
+}
+.product__img {
+  padding: 10px;
+  border-radius: 6px;
+  background: #E5E5E5;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.07);
+}
+.product__desc {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.product__desc p {
+  color: #2D4059;
+}
+.product__add {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+}
+
+.addBasket {
+  background: #EA5455;
+  padding: 20px;
+  border: 0;
+  border-radius: 9px;
+  margin: 10px;
+}
+
+.addFavorite {
+  background: #E5E5E5;
+  border: 0;
+  height: 50%;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  background: #E5E5E5;
+  margin: 10px;
+}
+.number__minus {
+  border-right: 1px solid #000;
+  padding: 10px;
+}
+.number__plus {
+  border-left: 1px solid #000;
+  padding: 10px;
+}
+.number p {
+  padding: 10px;
+}
+
+.namePrice {
+  font-weight: 600;
+}
+
 main {
   display: flex;
   flex-direction: row;
