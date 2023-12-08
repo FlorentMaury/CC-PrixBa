@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PrixBa | Produit</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-logo">
+                <img src="/images/logo_color.png" alt="Prixba Logo" />
+                <span>Prixba</span>
+            </div>
+        </div>
+        <div class="header-steps">
+            <div class="header-slogan">
+                Tous vos besoins à petits prix dans la métropole Lilloise
+            </div>
+            <ul>
+                <li>
+                    <span class="step-number">1</span> Choix et commandes des articles
+                </li>
+                <li><span class="step-number">2</span> Retrait des articles</li>
+                <li><span class="step-number">3</span> Paiement des articles</li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <select class="category-select">
+            <option value="all">Catégories</option>
+            <!-- Add other categories here -->
+        </select>
+        <div class="search-box">
+            <input type="text" placeholder="Recherche" />
+            <button>Rechercher</button>
+        </div>
+        <div class="nav-links">
+            <a href="products.html">Catalogue</a>
+            <a href="FAQ.html">Questions fréquentes</a>
+            <a href="index.html">Connexion</a>
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">2</span>
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="product">
+            <div class="product__img">
+                <img src="./images/hammer.png" alt="Marteau">
+            </div>
+            <div class="product__desc">
+                <p class="namePrice">Marteau</p>
+                <p class="namePrice">1€</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, veniam quibusdam. Sit sed itaque maiores voluptatibus cumque distinctio atque illum.</p>
+                <div class="product__add">
+                    <div class="number">
+                        <i class="fa-solid fa-minus number__minus"></i>
+                        <p>2</p>
+                        <i class="fa-solid fa-plus number__plus"></i>
+                    </div>
+                    <button class="addBasket">Ajouter au panier</button>
+                    <button class="addFavorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main__morePictures">
+            <img src="./images/hammer.png" alt="Marteau">
+            <img src="./images/hammer.png" alt="Marteau">
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <div class="footer-links__top">
+                <a href="./index.html">Accueil</a>
+                <a href="./products.html">Catalogue</a>
+                <a href="./FAQ.html">Questions fréquentes</a>
+            </div>
+            <div class="footer-links__bottom">
+                <a href="#">Première visite</a>
+                <a href="#">Livraison retrait</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <a href="#">Mentions légales</a> |
+                <a href="#">Conditions générales d'utilisation et de ventes</a>
+            </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/df2db8789f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

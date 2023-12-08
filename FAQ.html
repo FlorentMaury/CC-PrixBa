@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prixba | FAQ</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+          <div class="header-logo">
+            <img src="/images/logo_color.png" alt="Prixba Logo" />
+            <span>Prixba</span>
+          </div>
+        </div>
+        <div class="header-steps">
+          <div class="header-slogan">
+            Tous vos besoins à petits prix dans la métropole Lilloise
+          </div>
+          <ul>
+            <li>
+              <span class="step-number">1</span> Choix et commandes des articles
+            </li>
+            <li><span class="step-number">2</span> Retrait des articles</li>
+            <li><span class="step-number">3</span> Paiement des articles</li>
+          </ul>
+        </div>
+      </header>
+    
+      <nav class="nav-bar">
+        <select class="category-select">
+          <option value="all">Catégories</option>
+          <!-- Add other categories here -->
+        </select>
+        <div class="search-box">
+          <input type="text" placeholder="Recherche" />
+          <button>Rechercher</button>
+        </div>
+        <div class="nav-links">
+          <a href="products.html">Catalogue</a>
+          <a href="FAQ.html">Questions fréquentes</a>
+          <a href="index.html">Connexion</a>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">2</span>
+          </a>
+        </div>
+        </div>
+      </nav>
+
+    <main class="main">
+
+        <h1 class="main__title">Questions fréquentes</h1>
+
+        <div class="content">
+            <div class="content__desc">
+                <p>Première visite et inscription</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content__roll">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod soluta praesentium laborum in
+                    voluptatum, voluptatibus,
+                    consequuntur modi quos explicabo alias!</p>
+            </div>
+            <div class="content__desc">
+                <p>Les prix et les produits</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content__roll">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod soluta praesentium laborum in
+                    voluptatum, voluptatibus,
+                    consequuntur modi quos explicabo alias!</p>
+            </div>
+            <div class="content__desc">
+                <p>Comment se passe le retrait ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content__roll">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod soluta praesentium laborum in
+                    voluptatum, voluptatibus,
+                    consequuntur modi quos explicabo alias!</p>
+            </div>
+            <div class="content__desc">
+                <p>Les prix et les produits</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content__roll">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod soluta praesentium laborum in
+                    voluptatum, voluptatibus,
+                    consequuntur modi quos explicabo alias!</p>
+            </div>
+            <div class="content__desc">
+                <p>Comment se passe le retrait ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content__roll">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod soluta praesentium laborum in
+                    voluptatum, voluptatibus,
+                    consequuntur modi quos explicabo alias!</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+          <div class="footer-links__top">
+            <a href="index.html">Accueil</a>
+            <a href="products.html">Catalogue</a>
+            <a href="#">Questions fréquentes</a>
+          </div>
+          <div class="footer-links__bottom">
+          <a href="#">Première visite</a>
+          <a href="#">Livraison retrait</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-bottom">
+          <a href="#">Mentions légales</a> |
+          <a href="#">Conditions générales d'utilisation et de ventes</a>
+        </div>
+      </footer>
+
+    <script src="https://kit.fontawesome.com/df2db8789f.js" crossorigin="anonymous"></script>
+    <script>
+        let rollElements = document.querySelectorAll('.content__roll');
+
+        rollElements.forEach((element) => {
+            element.style.display = 'none';
+        });
+
+        let descElements = document.querySelectorAll('.content__desc');
+
+        descElements.forEach((element) => {
+            element.addEventListener('click', function () {
+                descElements.forEach((el) => {
+                    if (el !== this) {
+                        el.nextElementSibling.style.display = 'none';
+                        el.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+                        el.classList.remove('content__desc--active');
+                    }
+                });
+
+                this.classList.toggle('content__desc--active');
+
+                let icon = this.querySelector('i');
+                if (icon.classList.contains('fa-plus')) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+
+                let rollElement = this.nextElementSibling;
+                if (rollElement.style.display === 'none' || rollElement.style.display === '') {
+                    rollElement.style.display = 'block';
+                } else {
+                    rollElement.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
