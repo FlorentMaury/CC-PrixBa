@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>PrixBa | Produit</title>
 </head>
 
 <body>
@@ -50,16 +51,40 @@
         </div>
     </nav>
 
-    <main>
-        
+    <main class="main">
+        <div class="product">
+            <div class="product__img">
+                <img src="./images/hammer.png" alt="Marteau">
+            </div>
+            <div class="product__desc">
+                <p class="namePrice">Marteau</p>
+                <p class="namePrice">1€</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, veniam quibusdam. Sit sed itaque maiores voluptatibus cumque distinctio atque illum.</p>
+                <div class="product__add">
+                    <div class="number">
+                        <i class="fa-solid fa-minus number__minus"></i>
+                        <p>2</p>
+                        <i class="fa-solid fa-plus number__plus"></i>
+                    </div>
+                    <button class="addBasket">Ajouter au panier</button>
+                    <button class="addFavorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main__morePictures">
+            <img src="./images/hammer.png" alt="Marteau">
+            <img src="./images/hammer.png" alt="Marteau">
+        </div>
     </main>
 
     <footer class="site-footer">
         <div class="footer-links">
             <div class="footer-links__top">
-                <a href="#">Accueil</a>
-                <a href="#">Catalogue</a>
-                <a href="#">Questions fréquentes</a>
+                <a href="./index.html">Accueil</a>
+                <a href="./products.html">Catalogue</a>
+                <a href="./FAQ.html">Questions fréquentes</a>
             </div>
             <div class="footer-links__bottom">
                 <a href="#">Première visite</a>
