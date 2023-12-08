@@ -72,13 +72,51 @@ body {
   align-items: center;
 }
 
+.header-logo {
+  margin-left: 40px;
+}
+
+.header-logo span {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 10px;
+  position: relative;
+  bottom: 25px;
+}
+
+.header-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0;
+}
+.header-steps .header-slogan {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  margin-left: 200px;
+}
 .header-steps ul {
   list-style: none;
   display: flex;
+  gap: 20px;
+  margin-right: 20px;
 }
-
-.header-steps li {
+.header-steps ul li {
   font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.header-steps ul li .step-number {
+  font-size: 0.8em;
+  background-color: #ea5455;
+  color: white;
+  border-radius: 60%;
+  padding: 5px 10px;
+  margin-right: 10px;
 }
 
 .header-steps .logo-container {
@@ -201,9 +239,6 @@ body {
 }
 
 .cart-count {
-  position: absolute;
-  top: -10px;
-  right: -10px;
   background-color: #ea5455;
   color: white;
   border-radius: 50%;
@@ -362,9 +397,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main {
-    flex-direction: column;
-  }
   .main__title {
     flex-direction: column;
     align-items: start;
@@ -372,8 +404,8 @@ body {
   .main__title p {
     font-weight: 800;
   }
-  .cards {
-    justify-content: center;
+  .cards__arrowLeft {
+    background: red;
   }
   .smallScreen {
     display: block;
